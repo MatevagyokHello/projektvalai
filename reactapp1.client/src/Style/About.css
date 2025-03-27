@@ -1,0 +1,188 @@
+﻿/* Reset mindenre */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #8B5E3C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .header nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+        .header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+            .header nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+/* Háttér és alap betű */
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px; /* Ez ad helyet a fejlécnek */
+}
+
+/* Tartalom középen */
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+    /* Cím */
+    .about-content h1 {
+        font-size: 2.5rem;
+        color: #8B5E3C;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+/* Bevezető szöveg */
+.intro-text {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+/* Főkép + szöveg blokk */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    }
+
+.about-text {
+    flex: 1;
+}
+
+    .about-text h2 {
+        font-size: 1.8rem;
+        color: #BF8B50;
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+/* Fenntarthatóság blokk */
+.sustainability {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+    .sustainability h2 {
+        color: #A76A44;
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+    }
+
+    .sustainability ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .sustainability li {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .sustainability li::before {
+            content: '🍞';
+        }
+
+/* Kapcsolat szekció */
+.contact-info {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+        color: #8B5E3C;
+        margin-bottom: 15px;
+    }
+
+    .contact-info p {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+
+    .contact-info a {
+        color: #C7864D;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+/* Gomb stílus (ha lenne) */
+button, .buy-button, .filter-button {
+    background: linear-gradient(to bottom, #D9A065, #C7864D);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    button:hover, .buy-button:hover, .filter-button:hover {
+        background: linear-gradient(to bottom, #BF8B50, #A76A44);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    }

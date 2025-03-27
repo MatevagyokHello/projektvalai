@@ -1,0 +1,68 @@
+/* Háttér és alap stílus */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #5C4033;
+    background: linear-gradient(to bottom, #FDF6E3, #F8E1C4, #EBC79E);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Külsõ konténer */
+.admin-login-container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+    /* Cím */
+    .admin-login-container h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        color: #5C4033;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Input mezõk */
+    .admin-login-container input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    /* Hibaüzenet */
+    .admin-login-container .error {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+
+    /* Gomb stílus */
+    .admin-login-container button {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(to bottom, #D9A065, #C7864D);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+        .admin-login-container button:hover {
+            background: linear-gradient(to bottom, #BF8B50, #A76A44);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
